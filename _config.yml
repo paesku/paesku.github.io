@@ -1,0 +1,12 @@
+# Site settings
+title: Pascal Müller
+email: pascal@contextstudio.de
+description: > # this means to ignore newlines until "baseurl:"
+  I am a Frontend Developer from Leipzig, Germany
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://contextstudio.de" # the base hostname & protocol for your site
+twitter_username: paesku
+github_username:  paesku
+
+# Build settings
+markdown: kramdown
