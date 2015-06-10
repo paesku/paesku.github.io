@@ -7,6 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://contextstudio.de" # the base hostname & protocol for your site
 twitter_username: paesku
 github_username:  paesku
+xing_username:  Pascal_Mueller73
+linkedin_username:  Pascal Müller
 
 # Build settings
 markdown: kramdown
