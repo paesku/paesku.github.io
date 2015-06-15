@@ -1,0 +1,31 @@
+.button {
+    padding: $spacing-unit / 2 $spacing-unit;
+    &:hover{
+            a & {
+              text-decoration: none !important;
+              color: red;
+              }
+        }
+
+    -webkit-border-radius: $base-radius * 2;
+    border-radius: $base-radius * 2;
+}
+
+.button-stroke {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.button-primary {
+    border-color: $brand-color;
+    background-color: transparent;
+    -webkit-transition: background-color 300ms ease;
+       -moz-transition: background-color 300ms ease;
+        -ms-transition: background-color 300ms ease;
+         -o-transition: background-color 300ms ease;
+            transition: background-color 300ms ease;
+    &:hover{
+        color: #fff;
+        background-color: $brand-color;
+    }
+}

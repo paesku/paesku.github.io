@@ -2,16 +2,16 @@
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+    <div class="footer-col-wrapper text-center">
+      <div class=" footer-col-12">
+        <a href="mailto:{{ site.email }}" class="button button-stroke button-primary">Email</a>
       </div>
 
-      <div class="footer-col  footer-col-8">
+  </div>
+  <div class="footer-col-wrapper text-center">
+      <div class=" footer-col-12">
         <ul class="social-media-list">
+
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}" target="_blank">

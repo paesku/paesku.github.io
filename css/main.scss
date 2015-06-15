@@ -6,7 +6,7 @@
 
 
 
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300);
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -28,5 +28,6 @@
         "variables",
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "buttons"
 ;
