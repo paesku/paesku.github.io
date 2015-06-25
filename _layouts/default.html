@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body>
-
+<body>
+    {% include icons.svg %}
     <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+        <div class="wrapper">
+            {{ content }}
+        </div>
     </div>
-
     {% include footer.html %}
-
-  </body>
+</body>
 
 </html>
