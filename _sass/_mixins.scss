@@ -1,0 +1,15 @@
+// Mixins
+
+// Mixin for radius with default:
+@mixin radius($radius: $base-radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+// Mixin for media queries with:
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
