@@ -1,12 +1,25 @@
+@mixin button($text-color, $bg-color) {
+    border-color: $bg-color;
+    background-color: transparent;
+    &:hover {
+        color: $text-color;
+        background-color: lighten($bg-color, 2%);
+    }
+}
+
 .button {
     padding: $spacing-unit / 2 $spacing-unit;
-    &:hover{
-            a & {
-              text-decoration: none !important;
-              color: red;
-              }
+    font-weight: $button-font-weight;
+    &:hover {
+        a & {
+            text-decoration: none !important;
         }
-
+    }
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    -ms-transition: background-color 300ms ease;
+    -o-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
     -webkit-border-radius: $base-radius * 2;
     border-radius: $base-radius * 2;
 }
@@ -17,15 +30,5 @@
 }
 
 .button-primary {
-    border-color: $brand-color;
-    background-color: transparent;
-    -webkit-transition: background-color 300ms ease;
-       -moz-transition: background-color 300ms ease;
-        -ms-transition: background-color 300ms ease;
-         -o-transition: background-color 300ms ease;
-            transition: background-color 300ms ease;
-    &:hover{
-        color: #fff;
-        background-color: $brand-color;
-    }
+    @include button(#fff, $brand-color);
 }

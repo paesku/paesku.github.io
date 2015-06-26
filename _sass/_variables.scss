@@ -7,8 +7,8 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #efefef;
-$brand-color:      #47cde5;
+$background-color: #f7f7f7;
+$brand-color:      #ef4942; //#47cde5;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -20,6 +20,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$heading-font-weight: 300;
+$heading-font-color: $grey-color-dark;
+$button-font-weight: 400;
 
-
+$button-brand: $brand-color;
+$button-default: $grey-color;
 $base-radius: 2px;

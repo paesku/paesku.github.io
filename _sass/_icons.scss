@@ -13,6 +13,6 @@
     -o-transition: ease 200ms all;
     transition: ease 200ms all;
     &:hover {
-        color: lighten($grey-color, 10%);
+        color: lighten($brand-color, 10%);
     }
 }
