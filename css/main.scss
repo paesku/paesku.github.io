@@ -3,47 +3,22 @@
 ---
 @charset 'utf-8';
 
-
-
-
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-@mixin min-media-query($device) {
-  @media screen and (min-width: $device) {
-     @content;
-  }
-}
-
-@mixin hoverShadow($scale: 1.08) {
-    -webkit-transform: scale($scale);
-    -moz-transform: scale($scale);
-    -ms-transform: scale($scale);
-    -o-transform: scale($scale);
-    transform: scale($scale);
-    -webkit-filter: url(#shadow);
-}
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   'variables',
+  'mixins',
   'base',
+  'helper',
+  'nav',
+  'typo',
   'layout',
   'syntax-highlighting',
   'buttons',
-  'icons'
+  'icons',
+  'page',
+  'posts',
+  'post'
 ;

@@ -13,3 +13,9 @@ keybase_username:  paesku
 
 # Build settings
 markdown: kramdown
+
+# Server Settings
+defaults:
+  detach:  false
+  port:    4000
+  host:    127.0.0.1
