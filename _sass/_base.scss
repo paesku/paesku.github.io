@@ -34,6 +34,9 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    @mixin min-media-query($screen-md) {
+      font-size: $base-font-size * 0.8;
+    }
 }
 /**
  * Set `margin-bottom` to maintain vertical rhythm

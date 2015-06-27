@@ -14,6 +14,12 @@
   }
 }
 
+@mixin min-media-query($device) {
+  @media screen and (min-width: $device) {
+     @content;
+  }
+}
+
 
 @mixin hoverShadow($scale: 1.08) {
     -webkit-transform: scale($scale);
@@ -23,3 +29,4 @@
     transform: scale($scale);
     -webkit-filter: url(#shadow);
 }
+

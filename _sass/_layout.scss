@@ -99,8 +99,11 @@
 .social-media-list {
     li {
         display: inline;
-        &:not(:last-child) {
-            margin-right: $spacing-unit;
+        &:not(:last-child){
+          margin-right: $spacing-unit / 2;
+            @include min-media-query($screen-md) {
+              margin-right: $spacing-unit;
+          }
         }
     }
     a:hover {
