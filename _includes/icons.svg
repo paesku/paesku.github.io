@@ -2,11 +2,18 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <devs>
+         <!-- Define a Filter -->
         <filter id="shadow">
-            <feGaussianBlur stdDeviation="2" in="SourceAlpha" />
-            <feOffset dx="0" dy="0" result="offsetblur" />
-            <feFlood flood-color="rgba(200,200, 200, 0.4)" />
-            <feComposite operator="in" in2="offsetblur" />
+            <!-- Grab the Alpha Channel and set Greyscale -->
+            <feColorMatrix in="SourceAlpha"
+                           type="matrix"
+                           values="0 0 0 0 0
+                                   0 0 0 0 0
+                                   0 0 0 0 0
+                                   0 0 0 0.5 0"/>
+            <!-- Blur it! -->
+            <feGaussianBlur stdDeviation="2" />
+            <!-- And merge it all together into SourceGraphic-->
             <feMerge>
                 <feMergeNode/>
                 <feMergeNode in="SourceGraphic" />

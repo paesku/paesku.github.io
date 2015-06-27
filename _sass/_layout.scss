@@ -22,7 +22,7 @@
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
-    @include media-query($on-laptop) {
+    @include media-query($screen-md) {
         max-width: -webkit-calc(# {
             $content-width
         }
@@ -72,9 +72,9 @@
 }
 
 .home {
-    margin: 8rem 0;
-    @include media-query($on-laptop) {
-        margin: 2rem 0;
+    padding: 8rem 0;
+    @include media-query($screen-md) {
+        padding: 2rem 0;
     }
 }
 /**
