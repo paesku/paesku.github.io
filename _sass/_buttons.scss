@@ -11,6 +11,8 @@
     padding: $spacing-unit / 2 $spacing-unit;
     font-weight: $button-font-weight;
     &:hover {
+      @include hoverShadow();
+
         a & {
             text-decoration: none !important;
         }
