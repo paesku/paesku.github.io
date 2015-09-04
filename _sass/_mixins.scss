@@ -27,7 +27,6 @@
     -ms-transform: scale($scale);
     -o-transform: scale($scale);
     transform: scale($scale);
-    -webkit-filter: url(#shadow);
-    filter: url(#shadow);
+    -webkit-filter: drop-shadow(0 0 2px $grey-color);
+    filter: drop-shadow(0 0 2px $grey-color);
 }
-
