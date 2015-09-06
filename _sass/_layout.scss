@@ -72,9 +72,12 @@
 }
 
 .home {
-    padding: 8rem 0;
+    padding: 1rem 0 2rem;
     @include media-query($screen-md) {
         padding: 2rem 0;
+    }
+    svg {
+      margin: 3rem 0;
     }
 }
 /**
@@ -82,7 +85,7 @@
  */
 
 .site-footer {
-    padding: $spacing-unit 0;
+  //  padding: $spacing-unit 0;
 }
 
 .footer-heading {
