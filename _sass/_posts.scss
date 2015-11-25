@@ -1,31 +1,34 @@
-/*+
-  + Posts
-  */
+// Posts
 
-.post-preview{
-  background-color: #fff;
-  padding: $spacing-unit;
-  box-shadow: 0 0 1px 1px rgba(220, 220, 220, 0.4), 0 0 2px 2px rgba(200, 200, 200, 0.2);
+$post-bg-color: #fff;
+$post-preview-shadow-color-1: rgba(220, 220, 220, 0.4);
+$post-preview-shadow-color-2: rgba(200, 200, 200, 0.2);
+
+.post-preview {
   @include radius();
-  &:not(:last-child){
+  background-color: $post-bg-color;
+  box-shadow: 0 0 1px 1px $post-preview-shadow-color, 0 0 2px 2px $post-preview-shadow-color-2;
+  padding: $spacing-unit;
+
+  &:not(:last-child) {
     margin-bottom: $spacing-unit;
   }
 }
 
-
 .post-list {
-    margin-left: 0;
-    list-style: none;
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+  color: $grey-color;
+  font-size: $small-font-size;
 }
 
 .post-link {
-    display: block;
+  display: block;
 }

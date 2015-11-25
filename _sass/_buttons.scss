@@ -1,36 +1,35 @@
+$btn-text-color: #fff;
+
 @mixin button($text-color, $bg-color) {
-    border-color: $bg-color;
-    background-color: transparent;
-    &:hover {
-        color: $text-color;
-        background-color: lighten($bg-color, 2%);
-    }
+  border-color: $bg-color;
+  background-color: transparent;
+
+  &:hover {
+    color: $text-color;
+    background-color: lighten($bg-color, 2%);
+  }
 }
 
 .button {
-    padding: $spacing-unit / 2 $spacing-unit;
-    font-weight: $button-font-weight;
-    &:hover {
-      @include hoverShadow();
+  padding: $spacing-unit / 2 $spacing-unit;
+  font-weight: $button-font-weight;
+  transition: background-color 300ms ease;
+  border-radius: $base-radius * 2;
 
-        a & {
-            text-decoration: none !important;
-        }
+  &:hover {
+    @include hover-shadow();
+
+    a & {
+      text-decoration: none !important;
     }
-    -webkit-transition: background-color 300ms ease;
-    -moz-transition: background-color 300ms ease;
-    -ms-transition: background-color 300ms ease;
-    -o-transition: background-color 300ms ease;
-    transition: background-color 300ms ease;
-    -webkit-border-radius: $base-radius * 2;
-    border-radius: $base-radius * 2;
+  }
 }
 
 .button-stroke {
-    border-width: 1px;
-    border-style: solid;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .button-primary {
-    @include button(#fff, $brand-color);
+  @include button($btn-text-color, $brand-color);
 }

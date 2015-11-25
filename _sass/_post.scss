@@ -1,33 +1,31 @@
-/**
- * Posts
- */
+// Posts
 
-.post{
+.post {
   padding-top: $spacing-unit;
 }
 
 .post-intro {
-    height: 500px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-      background-attachment: fixed;;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
 }
 
-
 .post-header {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
