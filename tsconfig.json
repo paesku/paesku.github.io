@@ -12,7 +12,7 @@
     "./_typescript/**/*.ts"
   ],
   "atom": {
-    "rewriteTsconfig": true
+    "rewriteTsconfig": false
   },
   "formatCodeOptions": {
     "indentSize": 2,
