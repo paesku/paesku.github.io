@@ -17,12 +17,7 @@
             text-decoration: none !important;
         }
     }
-    -webkit-transition: background-color 300ms ease;
-    -moz-transition: background-color 300ms ease;
-    -ms-transition: background-color 300ms ease;
-    -o-transition: background-color 300ms ease;
     transition: background-color 300ms ease;
-    -webkit-border-radius: $base-radius * 2;
     border-radius: $base-radius * 2;
 }
 
