@@ -11,6 +11,21 @@ h6 {
     font-weight: $heading-font-weight;
     color: $heading-font-color;
 }
+
+
+h1 {
+  font-size: calc(1.4rem + 0.4 * ( (100vw - 10rem) / 40));
+}
+@media screen and (min-width: 50rem) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 10rem) {
+  h1 {
+  font-size: 1.2rem;
+  }
+}
 /**
  * Links
  */
