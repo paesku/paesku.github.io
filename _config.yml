@@ -22,3 +22,7 @@ defaults:
 
 gems:
 - jekyll-assets
+
+
+assets:
+  prefix: "/css"
