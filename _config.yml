@@ -19,3 +19,6 @@ defaults:
   detach:  false
   port:    4000
   host:    127.0.0.1
+
+gems:
+- jekyll-assets
