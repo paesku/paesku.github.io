@@ -21,8 +21,8 @@ defaults:
   host:    127.0.0.1
 
 gems:
-- jekyll-assets
-
+  - octopress-autoprefixer
+  - jekyll-assets
 
 assets:
   prefix: "/css"
