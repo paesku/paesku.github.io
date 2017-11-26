@@ -9,6 +9,33 @@
         <div class="footer-col-wrapper text-center">
             <div class=" footer-col-12">
                 <ul class="social-media-list">
+                    {% if site.xing_username %}
+                    <li>
+                        <a href="https://xing.com/profile/{{ site.xing_username }}" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#xing" />
+                            </svg>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.linkedin_username %}
+                    <li>
+                        <a href="https://de.linkedin.com/pub/pascal-müller/7b/283/156" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#linkedin" />
+                            </svg>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.stackshare %}
+                    <li>
+                        <a href="https://stackshare.io/paesku" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#stackshare" />
+                            </svg>
+                        </a>
+                    </li>
+                    {% endif %}
                     {% if site.github_username %}
                     <li>
                         <a href="https://github.com/{{ site.github_username }}" target="_blank">
@@ -17,7 +44,8 @@
                             </svg>
                         </a>
                     </li>
-                    {% endif %} {% if site.twitter_username %}
+                    {% endif %}
+                    {% if site.twitter_username %}
                     <li>
                         <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
                             <svg class="icon">
@@ -25,23 +53,8 @@
                             </svg>
                         </a>
                     </li>
-                    {% endif %} {% if site.xing_username %}
-                    <li>
-                        <a href="https://xing.com/profile/{{ site.xing_username }}" target="_blank">
-                            <svg class="icon">
-                                <use xlink:href="#xing" />
-                            </svg>
-                        </a>
-                    </li>
-                    {% endif %} {% if site.linkedin_username %}
-                    <li>
-                        <a href="https://de.linkedin.com/pub/pascal-müller/7b/283/156" target="_blank">
-                            <svg class="icon">
-                                <use xlink:href="#linkedin" />
-                            </svg>
-                        </a>
-                    </li>
-                    {% endif %} {% if site.keybase_username %}
+                    {% endif %}
+                    {% if site.keybase_username %}
                     <li>
                         <a href="https://keybase.io/paesku" target="_blank">
                             <svg class="icon">
