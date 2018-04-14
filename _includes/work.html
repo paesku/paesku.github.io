@@ -1,0 +1,7 @@
+<div>
+  <h2>{{ work.title }}</h2>
+
+  {% for tag in work.tags %}
+  <div>{% include tag.html %}</div>
+  {% endfor %}
+</div>
