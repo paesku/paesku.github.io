@@ -1,5 +1,14 @@
 .section {
   min-height: 100vh;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  h2, h3 {
+    color: #fff;
+  }
+
 }
 
 .card {
@@ -29,10 +38,14 @@
 }
 
 .image {
-  height: calc(100vh - 4rem);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &.main {
+    margin: 2rem;
+    height: calc(100vh - 4rem);
+  }
 }
 
 #intro {

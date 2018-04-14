@@ -9,11 +9,14 @@
       {% if work.client %}
       <p>{{ work.client}}</p>
       {% endif %}
-      <div class="tags">
-        {% for tag in work.tags %}
-        {% include tag.html %}
-        {% endfor %}
-      </div>
+      {% include tags.html %}
     </div>
   </div>
+  {% if work.images %}
+  <div class="images">
+    {% for image in work.images %}
+    <img src="../assets/{{ image }}">
+    {% endfor %}
+  </div>
+  {% endif %}
 </section>

@@ -22,6 +22,9 @@ nav {
   }
 
   .navigation-item {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
     cursor: pointer;
 
     &.active {
@@ -35,5 +38,13 @@ nav {
     &:hover {
       color: $grey-color-dark;
     }
+  }
+
+  .marker {
+    margin-left: .5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $grey-color;
   }
 }
