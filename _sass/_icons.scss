@@ -13,7 +13,6 @@
     -o-transition: ease 200ms all;
     transition: ease 200ms all;
     &:hover {
-        color: darken($brand-color, 5%);
-        @include hoverShadow();
+        color: darken($brand-color, 15%);
     }
 }
