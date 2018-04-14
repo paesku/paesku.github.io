@@ -1,25 +1,21 @@
 ---
-
 ---
+
 @charset 'utf-8';
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-  'variables',
-  'mixins',
-  'base',
-  'helper',
-  'nav',
-  'typo',
-  'layout',
-  'syntax-highlighting',
-  'buttons',
-  'icons',
-  'page',
-  'posts',
-  'post',
-  'intro'
-;
+@import 'variables',
+'mixins',
+'base',
+'helper',
+'nav',
+'typo',
+'layout',
+'syntax-highlighting',
+'buttons',
+'icons',
+'page',
+'intro',
+'work';

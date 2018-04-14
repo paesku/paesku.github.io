@@ -1,4 +1,14 @@
 <div class="home">
+  <nav class="vertical">
+    <ul>
+      {% for work in site.data.works %}
+      {% include navigation.html %}
+      {% endfor %}
+    </ul>
+  </nav>
+  <section class="intro">
+
+  </section>
   {% for work in site.data.works %}
   {% include work.html %}
   {% endfor %}

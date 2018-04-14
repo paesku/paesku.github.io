@@ -1,20 +1,30 @@
-- title: Eric Mill
-  subheader: bla
-  description: konklone
+- title: Stromsparer
+  key: strom
+  description: Onboarding- und Navigationskonzept für Endkunden eines Stromanbieters. Die Möglichkeit von Smartmetern in Kombination mit einem Gateway ermöglichen neue Stromsparoptionen.
   tags:
-   - blo
-   - bla
+   - User Interface
+   - User Experience
+  date: 2018
 
-- title: Parker Moore
-  subheader: bla
-  description: parkr
+- title: The Maker Mafia
+  key: mafia
+  description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständige Unternehmen können im Sinne der „Maker-Bewegung“ ihre Ressourcen, wie Maschinen, Räume und weitere physische Objekte miteinander teilen.
   tags:
-   - blo
-   - bla
+   - Konzept
+   - Strategie
+   - Machbarkeit
+   - UX Design
+  web: www.makermafia.com
+  date: 2013
 
-- title: Liu Fengyun
-  subheader: bla
-  description: liufengyun
+- title: Wirkungsmonitor
+  key: wimo
+  description: Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt).
+               Der Wirkungsmonitor ist eine innovative Lösung zur Wirkungsorientierten Steuerung von kommunalen Programmen und Projekten auf kommunaler Ebene.
+               Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und technische Realisierbarkeit.
   tags:
-   - blo
-   - bla
+   - Interface Design
+   - Informationsarchitektur
+   - Front-End Development
+  date: 2013 — 2014
+  client: Kommunale Gemeinschaftsstelle für Verwaltungsmanagement
