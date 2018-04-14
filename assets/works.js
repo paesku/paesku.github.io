@@ -1,23 +1,40 @@
 (function () {
   const sections = document.querySelectorAll('.section');
-  const navigations =  document.querySelectorAll('.navigation-item');
+  const reversedSections = Array.prototype.slice.call(sections).reverse();
+  const navigations = document.querySelectorAll('.navigation-item');
 
-  navigations.forEach(navigation => navigation.addEventListener('click', scrollTo));
+  navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
 
-  function scrollTo(event){
+  window.onscroll = () => onScroll();
+
+  function onScroll() {
+    reversedSections.forEach(section => {
+      if (isScrolledIntoView(section)) {
+        const activeNav = document.querySelector(`[data-target="${section.id}"]`);
+        markActiveNavigation(activeNav);
+      }
+    });
+
+    function isScrolledIntoView(element) {
+      return elementBoundsTop(element) >= 0;
+    }
+  }
+
+  function navigateTo(event) {
     event.preventDefault();
     const targetElement = document.getElementById(this.dataset.target);
-    const top = sectionPosition(targetElement);
+    const top = elementBoundsTop(targetElement);
     smoothScrollTo({top});
     markActiveNavigation(this)
   }
 
-  function sectionPosition(section){
-    return section.getBoundingClientRect().top;
+  function elementBoundsTop(element) {
+    const {top} = element.getBoundingClientRect()
+    return top;
   }
 
-  function smoothScrollTo(config){
-    const defaultConfig = {top: 0, left: 0,  behavior: 'smooth'};
+  function smoothScrollTo(config) {
+    const defaultConfig = {top: 0, left: 0, behavior: 'smooth'};
     window.scrollBy(Object.assign({}, defaultConfig, config));
   }
 
