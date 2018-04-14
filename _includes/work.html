@@ -9,6 +9,9 @@
       {% if work.client %}
       <p>{{ work.client}}</p>
       {% endif %}
+      {% if work.web %}
+      <a href="{{ work.web }}" target="_blank">{{ work.web}}</a>
+      {% endif %}
       {% include tags.html %}
     </div>
   </div>
