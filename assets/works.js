@@ -4,7 +4,7 @@
   const navigations = document.querySelectorAll('.navigation-item');
 
   navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
-
+  onInit();
   window.onscroll = () => onScroll();
 
   function onScroll() {
@@ -18,6 +18,11 @@
     function isScrolledIntoView(element) {
       return elementBoundsTop(element) >= 0;
     }
+  }
+
+  function onInit() {
+    const activeNav = document.getElementById('intro');
+    markActiveNavigation(activeNav);
   }
 
   function navigateTo(event) {

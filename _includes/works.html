@@ -1,13 +1,19 @@
 <div class="home">
   <nav class="vertical">
     <ul>
+      <li class="navigation-item"
+          data-target="intro">
+        <span class="marker"></span>
+        <span class="label">Me</span>
+      </li>
       {% for work in site.data.works %}
       {% include navigation.html %}
       {% endfor %}
     </ul>
   </nav>
-  <section class="intro">
-
+  <section id="intro"
+           class="section intro">
+    <div class="image"></div>
   </section>
   {% for work in site.data.works %}
   {% include work.html %}

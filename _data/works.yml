@@ -1,5 +1,6 @@
 - title: Stromsparer
-  key: strom
+  id: strom
+  introImage: power-overview.jpg
   description: Onboarding- und Navigationskonzept für Endkunden eines Stromanbieters. Die Möglichkeit von Smartmetern in Kombination mit einem Gateway ermöglichen neue Stromsparoptionen.
   tags:
    - User Interface
@@ -7,7 +8,8 @@
   date: 2018
 
 - title: The Maker Mafia
-  key: mafia
+  id: mafia
+  introImage: me.jpg
   description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständige Unternehmen können im Sinne der „Maker-Bewegung“ ihre Ressourcen, wie Maschinen, Räume und weitere physische Objekte miteinander teilen.
   tags:
    - Konzept
@@ -18,7 +20,8 @@
   date: 2013
 
 - title: Wirkungsmonitor
-  key: wimo
+  id: wimo
+  introImage: me.jpg
   description: Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt).
                Der Wirkungsmonitor ist eine innovative Lösung zur Wirkungsorientierten Steuerung von kommunalen Programmen und Projekten auf kommunaler Ebene.
                Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und technische Realisierbarkeit.
