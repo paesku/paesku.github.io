@@ -1,3 +1,4 @@
+{% if work.draft != true %}
 <section id="{{ work.id }}"
          class="section">
   <div class="image main"
@@ -10,7 +11,10 @@
       <p>{{ work.client}}</p>
       {% endif %}
       {% if work.web %}
-      <a href="{{ work.web }}" target="_blank">{{ work.web}}</a>
+      <a href="{{ work.web }}"
+         target="_blank">
+        {{ work.web}}
+      </a>
       {% endif %}
       {% include tags.html %}
     </div>
@@ -23,3 +27,4 @@
   </div>
   {% endif %}
 </section>
+{% endif %}

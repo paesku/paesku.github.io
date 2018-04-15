@@ -1,5 +1,7 @@
+{% if work.draft != true %}
 <li class="navigation-item"
     data-target="{{ work.id }}">
   <div class="marker"></div>
   <div class="label">{{ work.title }}</div>
 </li>
+{% endif %}

@@ -48,6 +48,7 @@
 
 - title: The Maker Mafia
   id: mafia
+  draft: true
   image: me.jpg
   description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständige Unternehmen können im Sinne der „Maker-Bewegung“ ihre Ressourcen, wie Maschinen, Räume und weitere physische Objekte miteinander teilen.
   tags:
