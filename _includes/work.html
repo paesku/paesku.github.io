@@ -1,12 +1,15 @@
 {% if work.draft != true %}
-<section id="{{ work.id }}"
-         class="section">
-  <div class="image main"
-       style="background-image: url('../assets/{{ work.image }}')">
+<section
+  id="{{ work.id }}"
+  class="section"
+  style="background-color: #{{ work.theme }};">
+  <div
+    class="image main"
+    style="background-image: url('../assets/portfolio/img/{{ work.image }}')">
     <div class="card">
       <h2>{{ work.title }}</h2>
       <p>{{ work.description }}</p>
-      <p>{{ work.date}}</p>
+      <p class="bold">{{ work.date}}</p>
       {% if work.client %}
       <p>{{ work.client}}</p>
       {% endif %}
@@ -22,7 +25,7 @@
   {% if work.images %}
   <div class="images">
     {% for image in work.images %}
-    <img src="../assets/{{ image }}">
+    <img src="../assets/portfolio/img/{{ image }}">
     {% endfor %}
   </div>
   {% endif %}
