@@ -1,6 +1,6 @@
 - title: Stromsparer
   id: strom
-  introImage: power-overview.jpg
+  image: power-overview.jpg
   description: Onboarding- und Navigationskonzept für Endkunden eines Stromanbieters. Die Möglichkeit von Smartmetern in Kombination mit einem Gateway ermöglichen neue Stromsparoptionen.
   tags:
    - User Interface
@@ -9,7 +9,7 @@
 
 - title: Firewall
   id: firewall
-  introImage: power-overview.jpg
+  image: power-overview.jpg
   description: Entwicklung einzelner Komponenten diverser GUIs. Angefangen von den kleinsten UI-Elementen über Module bis hin zum gesamt Layout mit Hilfe von Skizzen und Prototypen und Produktions fetigem Code.
   tags:
    - User Interface
@@ -22,7 +22,7 @@
 
 - title: Denkmalradar
   id: denkmalradar
-  introImage: power-overview.jpg
+  image: power-overview.jpg
   description: Der Denkmalradar ist ein Projekt der Leipziger Denkmalstiftung und dient Denkmalinteressierten zum Eintragen bedrohter Denkmale als auch zum Auffinden exemplarischer Sanierungskonzepte.
   tags:
    - AngularJs
@@ -35,7 +35,7 @@
 
 - title: Wirkungsmonitor
   id: wimo
-  introImage: me.jpg
+  image: me.jpg
   description: Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt).
                Der Wirkungsmonitor ist eine innovative Lösung zur Wirkungsorientierten Steuerung von kommunalen Programmen und Projekten auf kommunaler Ebene.
                Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und technische Realisierbarkeit.
@@ -48,7 +48,7 @@
 
 - title: The Maker Mafia
   id: mafia
-  introImage: me.jpg
+  image: me.jpg
   description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständige Unternehmen können im Sinne der „Maker-Bewegung“ ihre Ressourcen, wie Maschinen, Räume und weitere physische Objekte miteinander teilen.
   tags:
    - Konzept

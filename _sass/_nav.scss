@@ -30,6 +30,10 @@ nav {
     &.active {
       color: $brand-color;
 
+      .marker {
+        background-color: $brand-color;
+      }
+
       &:hover {
         color: $brand-color;
       }
@@ -37,14 +41,18 @@ nav {
 
     &:hover {
       color: $grey-color-dark;
-    }
-  }
 
-  .marker {
-    margin-left: .5rem;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $grey-color;
+      .marker {
+        background-color: $grey-color-dark;
+      }
+    }
+
+    .marker {
+      margin-left: .5rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $grey-color;
+    }
   }
 }
