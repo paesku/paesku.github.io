@@ -52,7 +52,11 @@ $section-space: 2rem;
 .images {
   margin: 0 auto;
   padding-top: $section-space;
-  width: 100vh;
+  text-align: center;
+
+  img:not(:last-child) {
+    padding-bottom: $section-space;
+  }
 }
 
 #intro {

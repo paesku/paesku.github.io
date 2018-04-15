@@ -8,11 +8,11 @@
     style="background-image: url('../assets/portfolio/img/{{ work.image }}')">
     <div class="card">
       <h2>{{ work.title }}</h2>
-      <span class="date small bold">{{ work.date}}</span>
-      <p>{{ work.description }}</p>
+      <div class="small bold">{{ work.date}}</div>
       {% if work.client %}
-      <p>{{ work.client}}</p>
+      <div class="small">{{ work.client}}</div>
       {% endif %}
+      <p>{{ work.description }}</p>
       {% if work.web %}
       <a href="http://{{ work.web }}"
          target="_blank">

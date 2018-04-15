@@ -1,8 +1,6 @@
 // Wrapper
 
 .wrapper {
-  @extend %clearfix;
-
   max-width: calc(# { $content-width } - (# { $spacing-unit } * 2));
   margin-right: auto;
   margin-left: auto;
@@ -92,7 +90,6 @@
 }
 
 .footer-col-wrapper {
-  @extend %clearfix;
   font-size: 15px;
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
@@ -135,23 +132,3 @@
   }
 }
 
-// Page content
-
-.post-list {
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
-}

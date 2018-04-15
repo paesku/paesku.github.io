@@ -4,7 +4,14 @@
   const navigations = document.querySelectorAll('.navigation-item');
 
   onInit();
-  window.onscroll = () => onScroll();
+
+  function onInit() {
+    navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
+    window.onscroll = () => onScroll();
+
+    const activeNav = document.getElementById('intro');
+    markActiveNavigation(activeNav);
+  }
 
   function onScroll() {
     sections.forEach(section => {
@@ -17,13 +24,6 @@
     function isScrolledIntoView(element) {
       return elementBoundsTop(element) <= 1;
     }
-  }
-
-  function onInit() {
-    navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
-
-    const activeNav = document.getElementById('intro');
-    markActiveNavigation(activeNav);
   }
 
   function navigateTo(event) {
