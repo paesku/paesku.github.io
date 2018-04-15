@@ -1,14 +1,13 @@
 (function () {
-  const sections = document.querySelectorAll('.section');
-  const reversedSections = Array.prototype.slice.call(sections).reverse();
+  const sectionNodes = document.querySelectorAll('.section');
+  const sections = Array.prototype.slice.call(sectionNodes);
   const navigations = document.querySelectorAll('.navigation-item');
 
-  navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
   onInit();
   window.onscroll = () => onScroll();
 
   function onScroll() {
-    reversedSections.forEach(section => {
+    sections.forEach(section => {
       if (isScrolledIntoView(section)) {
         const activeNav = document.querySelector(`[data-target="${section.id}"]`);
         markActiveNavigation(activeNav);
@@ -16,11 +15,13 @@
     });
 
     function isScrolledIntoView(element) {
-      return elementBoundsTop(element) >= 0;
+      return elementBoundsTop(element) <= 1;
     }
   }
 
   function onInit() {
+    navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
+
     const activeNav = document.getElementById('intro');
     markActiveNavigation(activeNav);
   }
@@ -34,7 +35,7 @@
   }
 
   function elementBoundsTop(element) {
-    const {top} = element.getBoundingClientRect()
+    const {top} = element.getBoundingClientRect();
     return top;
   }
 
