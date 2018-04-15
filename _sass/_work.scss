@@ -50,7 +50,9 @@ $section-space: 2rem;
 }
 
 .images {
+  margin: 0 auto;
   padding-top: $section-space;
+  width: 100vh;
 }
 
 #intro {
