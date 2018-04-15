@@ -1,3 +1,5 @@
+@import 'mixins';
+
 $btn-text-color: #fff;
 
 @mixin button($text-color, $bg-color) {
@@ -18,7 +20,7 @@ button,
   border-radius: $base-radius * 2;
 
   &:hover {
-    @include hover-shadow();
+    filter: drop-shadow(0 0 2px $grey-color);
 
     a & {
       text-decoration: none !important;
