@@ -1,62 +1,59 @@
-//  Navbar
+@import './variables.scss';
 
-.site-nav {
-  float: right;
-  line-height: 56px;
+nav {
+  color: $grey-color;
 
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: 30px;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
+  &.vertical {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    bottom: auto;
     text-align: right;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
 
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
+  ul {
+    list-style: none;
+    margin: 0;
+  }
 
-      > svg {
-        width: 18px;
-        height: 15px;
+  .navigation-item {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    cursor: pointer;
+
+    &.active {
+      color: $brand-color;
+
+      .marker {
+        background-color: $brand-color;
+      }
+
+      &:hover {
+        color: $brand-color;
       }
     }
 
-    .trigger {
-      clear: both;
+    &:hover {
+      color: $grey-color-dark;
+
+      .marker {
+        background-color: $grey-color-dark;
+      }
+    }
+
+    .marker {
+      margin: .5rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $grey-color;
+    }
+
+    .label {
       display: none;
     }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-    }
   }
-
-  .menu-icon {
-    display: none;
-  }
-
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the first one
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
-  }
-
-
 }

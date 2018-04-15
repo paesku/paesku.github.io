@@ -1,0 +1,75 @@
+- title: Stromsparer
+  id: strom
+  image: power-overview.jpg
+  theme: efefef
+  description: Onboarding- und Navigationskonzept für Endkunden eines Stromanbieters. Die Möglichkeit von Smartmetern in Kombination mit einem Gateway ermöglichen neue Stromsparoptionen.
+  tags:
+   - User Interface
+   - User Experience
+   - Konzept
+  date: 2018
+  images:
+   - power-detail.jpg
+
+- title: Firewall
+  id: firewall
+  image: firewall-login.png
+  description: Entwicklung einzelner Komponenten diverser GUIs. Angefangen von den kleinsten UI-Elementen über Module bis hin zum gesamt Layout mit Hilfe von Skizzen und Prototypen und Produktions fetigem Code.
+  tags:
+   - User Interface
+   - User Experience
+   - AngularJs
+   - Angular
+   - Front-End Development
+   - App-Development
+  date: 2015 - 1018
+  images:
+   - firewall-pattern-lab.png
+   - firewall-reporting-detail.png
+
+- title: Denkmalradar
+  id: denkmalradar
+  image: denkmalradar.png
+  theme: cecece
+  description: Der Denkmalradar ist ein Projekt der Leipziger Denkmalstiftung und dient Denkmalinteressierten zum Eintragen bedrohter Denkmale als auch zum Auffinden exemplarischer Sanierungskonzepte.
+  tags:
+   - AngularJS
+   - Bootstrap
+   - User Interface
+   - App-Development
+   - Konzept
+  date: 2014 — 2015
+  client: Leipziger Denkmalstiftung
+  web: www.denkmalradar.de
+  images:
+   - denkmalradar-form.png
+
+- title: Wirkungsmonitor
+  id: wimo
+  image: wirkunsgmonitor-04.jpg
+  description: Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt).
+               Der Wirkungsmonitor ist eine innovative Lösung zur Wirkungsorientierten Steuerung von kommunalen Programmen und Projekten auf kommunaler Ebene.
+               Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und technische Realisierbarkeit.
+  tags:
+   - User Interface
+   - User Experience
+   - Informationsarchitektur
+   - Front-End Development
+   - Konzept
+  date: 2013 — 2014
+  client: Kommunale Gemeinschaftsstelle für Verwaltungsmanagement
+  images:
+   - wirkunsgmonitor-04.jpg
+
+- title: The Maker Mafia
+  id: mafia
+  draft: true
+  image: me.jpg
+  description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständige Unternehmen können im Sinne der „Maker-Bewegung“ ihre Ressourcen, wie Maschinen, Räume und weitere physische Objekte miteinander teilen.
+  tags:
+   - Konzept
+   - User Interface
+   - User Experience
+  web: www.makermafia.com
+  date: 2013
+  images:

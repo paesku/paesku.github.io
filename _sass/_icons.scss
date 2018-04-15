@@ -1,15 +1,16 @@
 // Icons
 
 .icon {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-  transition: ease 200ms all;
-
-  &:hover {
-
-    @include hover-shadow();
-    color: darken($brand-color, 5%);
-  }
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    -webkit-transition: ease 200ms all;
+    -moz-transition: ease 200ms all;
+    -ms-transition: ease 200ms all;
+    -o-transition: ease 200ms all;
+    transition: ease 200ms all;
+    &:hover {
+        color: darken($brand-color, 15%);
+    }
 }

@@ -1,0 +1,33 @@
+{% if work.draft != true %}
+<section
+  id="{{ work.id }}"
+  class="section"
+  style="background-color: #{{ work.theme }};">
+  <div
+    class="image main"
+    style="background-image: url('../assets/portfolio/img/{{ work.image }}')">
+    <div class="card">
+      <h2>{{ work.title }}</h2>
+      <p class="small bold">{{ work.date}}</p>
+      <p>{{ work.description }}</p>
+      {% if work.client %}
+      <p>{{ work.client}}</p>
+      {% endif %}
+      {% if work.web %}
+      <a href="{{ work.web }}"
+         target="_blank">
+        {{ work.web}}
+      </a>
+      {% endif %}
+      {% include tags.html %}
+    </div>
+  </div>
+  {% if work.images %}
+  <div class="images">
+    {% for image in work.images %}
+    <img src="../assets/portfolio/img/{{ image }}">
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endif %}

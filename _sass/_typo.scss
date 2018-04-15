@@ -31,15 +31,17 @@ h1 {
 // Links
 
 a {
-  color: $brand-color;
-  text-decoration: none;
-
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
+    color: $brand-color;
+    text-decoration: none;
 }
 
 p {
+    a {
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        transition: color ease 400ms;
+        border-bottom: 1px solid $brand-color;
+    }
   a {
     animation-delay: 2s;
     transition: color ease 400ms;
@@ -85,4 +87,13 @@ pre {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+
+.bold {
+  font-weight: 400;
+}
+
+.small {
+  font-size: .8em
 }
