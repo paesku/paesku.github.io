@@ -21,7 +21,7 @@ defaults:
   port:    4000
   host:    127.0.0.1
 
-gems:
+plugins:
   - octopress-autoprefixer
   - jekyll-assets
 
