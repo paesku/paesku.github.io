@@ -1,5 +1,6 @@
 (function () {
-  const sections = document.getElementsByClassName('.section');
+  const sectionNodes = document.querySelectorAll('.section');
+  const sections = Array.prototype.slice.call(sectionNodes);
   const navigations = document.querySelectorAll('.navigation-item');
 
   onInit();
