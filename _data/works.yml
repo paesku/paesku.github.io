@@ -2,10 +2,10 @@
   id: strom
   image: power-overview.jpg
   theme: efefef
-  description: Onboarding- und Navigationskonzept für Endkunden eines Stromanbieters. Die Möglichkeit von Smartmetern in Kombination mit einem Gateway ermöglichen neue Stromsparoptionen.
+  description: Onboarding- und Navigationskonzept für Endkunden eines fiktiven Stromanbieters. Smartmeter in Kombination mit einem Gateway ermöglichen neue Stromsparoptionen.
   tags:
-   - User Interface
-   - User Experience
+   - UserInterface
+   - UserExperience
    - Konzept
   date: 2018
   images:
@@ -14,15 +14,14 @@
 - title: Firewall
   id: firewall
   image: firewall-login.jpg
-  description: Entwicklung einzelner Komponenten diverser GUIs. Angefangen von den kleinsten UI-Elementen über Module bis hin zum gesamt Layout mit Hilfe von Skizzen und Prototypen und Produktions fetigem Code.
+  description: Entwicklung von Web-Applikationen zur Überwachung des Netzwerkverkehrs durch Systemadministratoren. Angefangen von kleinsten Interface-Komponenten beinhaltete die Entwicklung auch Bibliotheken bis hin zum gesamten Layout mit Hilfe von Skizzen, Prototypen und produktionsfetigem Code.
   tags:
-   - User Interface
-   - User Experience
+   - UserInterface
+   - UserExperience
    - AngularJs
    - Angular
-   - Front-End Development
-   - App-Development
-  date: 2015 - 1018
+   - FrontendDevelopment
+  date: 2015 - 2018
   images:
    - firewall-reporting-detail.png
 
@@ -34,11 +33,10 @@
   tags:
    - AngularJS
    - Bootstrap
-   - User Interface
-   - App-Development
+   - UserInterface
+   - FrontendDevelopment
    - Konzept
   date: 2014 — 2015
-  client: Leipziger Denkmalstiftung
   web: www.denkmalradar.de
   images:
    - denkmalradar-form.png
@@ -46,17 +44,16 @@
 - title: Wirkungsmonitor
   id: wimo
   image: wirkunsgmonitor-04.jpg
-  description: Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt).
-               Der Wirkungsmonitor ist eine innovative Lösung zur Wirkungsorientierten Steuerung von kommunalen Programmen und Projekten auf kommunaler Ebene.
+  description: Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt)
+               und eine innovative Lösung zur wirkungsorientierten Steuerung von Programmen und Projekten auf kommunaler Ebene.
                Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und technische Realisierbarkeit.
   tags:
-   - User Interface
-   - User Experience
+   - UserInterface
+   - UserExperience
    - Informationsarchitektur
-   - Front-End Development
+   - FrontendDevelopment
    - Konzept
   date: 2013 — 2014
-  client: Kommunale Gemeinschaftsstelle für Verwaltungsmanagement
   images:
    - wirkunsgmonitor-04.jpg
 
@@ -64,11 +61,11 @@
   id: mafia
   draft: true
   image: me.jpg
-  description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständige Unternehmen können im Sinne der „Maker-Bewegung“ ihre Ressourcen, wie Maschinen, Räume und weitere physische Objekte miteinander teilen.
+  description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständische Unternehmen können im Sinne der „Maker-Bewegung“ Ressourcen, wie Maschinen, Räume und weitere physische Objekte, miteinander teilen.
   tags:
    - Konzept
-   - User Interface
-   - User Experience
+   - UserInterface
+   - UserExperience
   web: www.makermafia.com
   date: 2013
   images:
