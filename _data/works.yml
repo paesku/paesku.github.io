@@ -14,6 +14,7 @@
 - title: Firewall
   id: firewall
   image: firewall-login.jpg
+  theme: 7d7d7d
   description: Entwicklung von Web-Applikationen zur Überwachung des Netzwerkverkehrs durch Systemadministratoren. Angefangen von kleinsten Interface-Komponenten beinhaltete die Entwicklung auch Bibliotheken bis hin zum gesamten Layout mit Hilfe von Skizzen, Prototypen und produktionsfetigem Code.
   tags:
    - UserInterface
@@ -24,6 +25,8 @@
   date: 2015 - 2018
   images:
    - firewall-reporting-detail.png
+   - firewall-rule-list.png
+   - firewall-rule-form.png
 
 - title: Denkmalradar
   id: denkmalradar
@@ -43,7 +46,8 @@
 
 - title: Wirkungsmonitor
   id: wimo
-  image: wirkunsgmonitor-04.jpg
+  image: wirkunsgmonitor-login.jpg
+  theme: ffffff
   description: Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt)
                und eine innovative Lösung zur wirkungsorientierten Steuerung von Programmen und Projekten auf kommunaler Ebene.
                Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und technische Realisierbarkeit.
@@ -56,6 +60,7 @@
   date: 2013 — 2014
   images:
    - wirkunsgmonitor-04.jpg
+   - wirkunsgmonitor-task.jpg
 
 - title: The Maker Mafia
   id: mafia
