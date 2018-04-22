@@ -31,7 +31,7 @@
 - title: Firewall
   id: firewall
   image: firewall-login.jpg
-  theme: 7d7d7d
+  theme: b3b3b3
   description: Entwicklung von Web-Applikationen zur Überwachung des Netzwerkverkehrs durch Systemadministratoren.
                Angefangen von kleinsten Interface-Komponenten beinhaltete die Entwicklung auch Bibliotheken bis hin zum
                gesamten Layout mit Hilfe von Skizzen, Prototypen und produktionsfertigem Code.

@@ -9,7 +9,7 @@
     navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
     window.onscroll = () => onScroll();
 
-    const activeNav = document.querySelector(`[data-target="about"]`);
+    const activeNav = document.querySelectorAll('[data-target]')[0];
     markActiveNavigation(activeNav);
   }
 
