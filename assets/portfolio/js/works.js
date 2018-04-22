@@ -9,7 +9,7 @@
     navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
     window.onscroll = () => onScroll();
 
-    const activeNav = document.getElementById('intro');
+    const activeNav = document.querySelector(`[data-target="about"]`);
     markActiveNavigation(activeNav);
   }
 
@@ -22,7 +22,7 @@
     });
 
     function isScrolledIntoView(element) {
-      return elementBoundsTop(element) <= 1;
+      return elementBoundsTop(element) <= 0;
     }
   }
 
