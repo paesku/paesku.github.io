@@ -1,4 +1,6 @@
 (function () {
+  'use strict';
+
   const sectionNodes = document.querySelectorAll('.section');
   const sections = Array.prototype.slice.call(sectionNodes);
   const navigations = document.querySelectorAll('.navigation-item');
