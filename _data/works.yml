@@ -1,8 +1,24 @@
+- title: Pascal Müller
+  id: about
+  image: paesku.jpg
+  theme: ffffff
+  description: Geboren bei Muri in der Schweiz, schloss ich nach meiner Ausbildung zum Maschinenzeichner das
+               Industrie Design Studium an der Fachhochschule Nordwestschweiz (FHNW) ab. Anschliessend arbeitete
+               ich als System-Designer im Bereich Netzwerkkommunikation bei Reichle & deMassari, sowie als
+               wissenschaftlicher Mitarbeiter an der FHNW. Seit 2009 lebe und arbeite ich in Leipzig und bin seit nunmehr
+               3 Jahren als UX Designer im Bereich Netzwerksicherheit tätig. Meine Leidenschaft gilt der Konzeption und
+               Entwicklung komplexer Anwendungen.
+  tags:
+   - UI/UXDesign
+   - Konzeption
+   - FrontendDevelopment
+
 - title: Stromsparer
   id: strom
   image: power-overview.jpg
   theme: efefef
-  description: Onboarding- und Navigationskonzept für Endkunden eines fiktiven Stromanbieters. Smartmeter in Kombination mit einem Gateway ermöglichen neue Stromsparoptionen.
+  description: Onboarding- und Navigationskonzept für Endkunden eines fiktiven Stromanbieters. Smartmeter in Kombination
+               mit einem Gateway ermöglichen neue Stromsparoptionen.
   tags:
    - UserInterface
    - UserExperience
@@ -16,12 +32,15 @@
   id: firewall
   image: firewall-login.jpg
   theme: 7d7d7d
-  description: Entwicklung von Web-Applikationen zur Überwachung des Netzwerkverkehrs durch Systemadministratoren. Angefangen von kleinsten Interface-Komponenten beinhaltete die Entwicklung auch Bibliotheken bis hin zum gesamten Layout mit Hilfe von Skizzen, Prototypen und produktionsfetigem Code.
+  description: Entwicklung von Web-Applikationen zur Überwachung des Netzwerkverkehrs durch Systemadministratoren.
+               Angefangen von kleinsten Interface-Komponenten beinhaltete die Entwicklung auch Bibliotheken bis hin zum
+               gesamten Layout mit Hilfe von Skizzen, Prototypen und produktionsfertigem Code.
   tags:
    - UserInterface
    - UserExperience
    - AngularJs
    - Angular
+   - UILibrary
    - FrontendDevelopment
    - Sketch
    - InvisionApp
@@ -36,7 +55,8 @@
   id: denkmalradar
   image: denkmalradar.png
   theme: cecece
-  description: Der Denkmalradar ist ein Projekt der Leipziger Denkmalstiftung und dient Denkmalinteressierten zum Eintragen bedrohter Denkmale als auch zum Auffinden exemplarischer Sanierungskonzepte.
+  description: Der Denkmalradar ist ein Projekt der Leipziger Denkmalstiftung und dient Denkmalinteressierten zum
+               Eintragen bedrohter Denkmale als auch zum Auffinden exemplarischer Sanierungskonzepte.
   tags:
    - AngularJS
    - Bootstrap
@@ -53,8 +73,9 @@
   image: wirkunsgmonitor-login.jpg
   theme: ffffff
   description: Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt)
-               und eine innovative Lösung zur wirkungsorientierten Steuerung von Programmen und Projekten auf kommunaler Ebene.
-               Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und technische Realisierbarkeit.
+               und eine innovative Lösung zur wirkungsorientierten Steuerung von Programmen und Projekten auf kommunaler
+               Ebene. Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und
+               technische Realisierbarkeit.
   tags:
    - UserInterface
    - UserExperience
@@ -70,7 +91,9 @@
   id: mafia
   draft: true
   image: me.jpg
-  description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständische Unternehmen können im Sinne der „Maker-Bewegung“ Ressourcen, wie Maschinen, Räume und weitere physische Objekte, miteinander teilen.
+  description: Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und
+               mittelständische Unternehmen können im Sinne der „Maker-Bewegung“ Ressourcen, wie Maschinen, Räume und
+               weitere physische Objekte, miteinander teilen.
   tags:
    - Konzept
    - UserInterface
