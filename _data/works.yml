@@ -46,6 +46,7 @@
    - InvisionApp
    - Scrum
   date: 2015 - 2018
+  web: www.demo.cognitix.systems
   images:
    - firewall-reporting-detail.png
    - firewall-rule-list.png
