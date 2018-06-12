@@ -48,9 +48,12 @@
   date: 2015 - 2018
   web: www.demo.cognitix.systems
   images:
-   - firewall-reporting-detail.png
-   - firewall-rule-list.png
-   - firewall-rule-form.png
+   - firewall-analytics.png
+   - firewall-policy-list.png
+   - firewall-policy-form.png
+   - firewall-policy-form-actions.png
+   - firewall-intelligence-dashboard.png
+   - firewall-log-list.png
 
 - title: Denkmalradar
   id: denkmalradar

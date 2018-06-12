@@ -1,11 +1,18 @@
 (function () {
   'use strict';
 
-  const sectionNodes = document.querySelectorAll('.section');
-  const sections = Array.prototype.slice.call(sectionNodes);
-  const navigations = document.querySelectorAll('.navigation-item');
+  let linkModule = {
+    config: {
+      section: 'section',
+      navigation: 'navigation-item',
+    },
+    sectionNodes: () => document.querySelectorAll(`.${this.config.section}`),
+    sections: () => Array.prototype.slice.call(this.sectionNodes),
+    navigations: () => document.querySelectorAll(`.${this.config.navigation}`),
+    onInit: onInit,
+  };
 
-  onInit();
+  linkModule.onInit();
 
   function onInit() {
     navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
