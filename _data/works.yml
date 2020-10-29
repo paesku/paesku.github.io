@@ -6,24 +6,45 @@
                Industrie Design Studium an der Fachhochschule Nordwestschweiz (FHNW) ab. Anschliessend arbeitete
                ich als System-Designer im Bereich Netzwerkkommunikation bei Reichle & deMassari, sowie als
                wissenschaftlicher Mitarbeiter an der FHNW. Seit 2009 lebe und arbeite ich in Leipzig und bin seit nunmehr
-               3 Jahren als UX Designer im Bereich Netzwerksicherheit tätig. Meine Leidenschaft gilt der Konzeption und
+               5 Jahren als UX Designer in verschiedenen Softwarebereichen tätig. Meine Leidenschaft gilt der Konzeption und
                Entwicklung komplexer Anwendungen.
   tags:
    - UI/UXDesign
    - Konzeption
    - FrontendDevelopment
 
+- title: M&A Prozessmanagement
+  id: maa
+  image: process-figma.png
+  theme: '000'
+  description: Massgeschneiderte Inhouse Anwendung für M&A Prozessemanagement zum verfolgen von Deals als auch CMS zur
+               Verwaltung von Firmen und Kontakten.
+  tags:
+    - UserExperience
+    - Angular
+    - Figma
+    - UILibrary
+    - Mobile
+    - Desktop
+  date: 2019
+  images:
+    - process-grid.png
+    - process-form.png
+    - process-detail.png
+    - process-search.png
+
 - title: Stromsparer
   id: strom
   image: power-overview.jpg
   theme: efefef
   description: Onboarding- und Navigationskonzept für Endkunden eines fiktiven Stromanbieters. Smartmeter in Kombination
-               mit einem Gateway ermöglichen neue Stromsparoptionen.
+               mit einem Gateway ermöglichen neue Stromsparoptionen
   tags:
    - UserInterface
    - UserExperience
    - Konzept
    - Sketch
+   - Mobile
   date: 2018
   images:
    - power-detail.jpg
