@@ -28,11 +28,11 @@
     - Desktop
   date: 2019
   images:
+    - process-mobile.png
     - process-grid.png
     - process-form.png
     - process-detail.png
     - process-search.png
-    - process-mobile.png
 
 - title: Stromsparer
   id: strom
