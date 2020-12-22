@@ -1,6 +1,6 @@
 README.md
 _includes/**/*.html
-_data
+_data/works.yml
 _layouts
 _sass
 assets
