@@ -4,7 +4,6 @@
   "description": "Source Code for contextstudio.de based on 11ty",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "env NODE_ENV=production npx eleventy --pathprefix 'contextstudio'",
     "debug": "DEBUG=* eleventy",
     "start": "eleventy --serve"
