@@ -4,7 +4,7 @@ const sassPluginOptions = {
 };
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSass, sassPluginOptions);
-  eleventyConfig.addPassthroughCopy({ 'assets/*.jpg': 'img' });
-  eleventyConfig.addPassthroughCopy({ 'assets/portfolio/img/*.jpg': 'img/portfolio' });
+  eleventyConfig.addPassthroughCopy({ 'assets/*.(jpg|png)': 'img' });
+  eleventyConfig.addPassthroughCopy({ 'assets/portfolio/img/*.(jpg|png)': 'img/portfolio' });
 };
 

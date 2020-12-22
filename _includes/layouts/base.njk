@@ -10,6 +10,7 @@
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
-  </body>
   {% include "layouts/footer.njk" %}
+  <script type="text/javascript">{% include "js/mailto.js" %}</script>
+  </body>
 </html>
