@@ -1,4 +1,4 @@
-module.exports = function () {
+module.exports = () => {
   return [
     {url: 'https://xing.com/profile/Pascal_Mueller73', icon: 'xing'},
     {url: 'https://linkedin.com/in/pascal--mueller', icon: 'linkedin'},
