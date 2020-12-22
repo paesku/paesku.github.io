@@ -3,7 +3,7 @@ name: Build contextstudio.de
 on:
   push:
     branches:
-      - master
+      - 11ty
 
 jobs:
   build:
