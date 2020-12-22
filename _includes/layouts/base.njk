@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contextstudio</title>
+     <link rel="stylesheet" href="{{ 'main.css' | url }}">
   </head>
   <body>
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
   </body>
+  {% include "layouts/footer.njk" %}
 </html>
