@@ -1,3 +1,4 @@
+'use strict';
 function sendMail() {
   const mail = 'pascalATcontextstudioDOTde';
   window.location = 'mailto:' + replaceMailPlaceholders(mail);
