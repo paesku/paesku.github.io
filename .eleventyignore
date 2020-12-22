@@ -1,0 +1,9 @@
+README.md
+_includes/**/*.html
+_data/works.yml
+_layouts
+_sass
+assets
+css
+index.html
+portfolio.html

@@ -1,0 +1,22 @@
+{
+  "name": "paesku.github.io",
+  "version": "1.0.0",
+  "description": "Source Code for contextstudio.de based on 11ty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'contextstudio'",
+    "debug": "DEBUG=* eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paesku/paesku.github.io.git"
+  },
+  "author": "paesku",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "eleventy-plugin-sass": "^1.1.1"
+  }
+}

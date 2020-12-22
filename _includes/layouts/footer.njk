@@ -1,0 +1,23 @@
+{% include "layouts/icons.njk" %}
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-col-wrapper text-center">
+            <div class="footer-col-12">
+                <button class="button button-stroke button-primary" onclick="sendMail()">Email</button>
+            </div>
+        </div>
+        <div class="footer-col-wrapper text-center">
+            <div class=" footer-col-12">
+                <ul class="social-media-list">
+                   {% for profile in profiles -%}
+                     <li>
+                       <a href="{{profile.url}}" target="_blank">
+                         <svg class="icon"><use xlink:href="#{{profile.icon}}" /></svg>
+                       </a>
+                     </li>
+                   {% endfor -%}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

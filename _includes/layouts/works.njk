@@ -1,0 +1,10 @@
+<nav class="vertical">
+  <ul>
+    {% for work in works -%}
+    {% include "layouts/navigation.njk" %}
+    {% endfor -%}
+  </ul>
+</nav>
+{% for work in works -%}
+{% include "layouts/work.njk" %}
+{% endfor -%}
