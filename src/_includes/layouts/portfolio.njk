@@ -8,6 +8,11 @@
   </head>
   <body>
       {{ content | safe }}
+      {% if script === 'portfolio.js' %}
       <script type="text/javascript">{% include "js/portfolio.js" %}</script>
+      {% endif %}
+      {% if script === 'git.js' %}
+      <script type="text/javascript">{% include "js/git.js" %}</script>
+      {% endif %}
   </body>
 </html>

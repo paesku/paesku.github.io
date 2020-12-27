@@ -1,5 +1,3 @@
-// Headings
-
 $code-bg-color: #eef;
 
 h1,
@@ -13,7 +11,7 @@ h6 {
 }
 
 h1 {
-  font-size: calc(1.4rem + 0.4 * ( (100vw - 10rem) / 40));
+  font-size: calc(1.4rem + 0.4 * ((100vw - 10rem) / 40));
 }
 
 @media screen and (min-width: 50rem) {
@@ -28,29 +26,27 @@ h1 {
   }
 }
 
-// Links
-
 a {
-    color: $brand-color;
-    text-decoration: none;
+  color: $brand-color;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 p {
-    a {
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
-        transition: color ease 400ms;
-        border-bottom: 1px solid $brand-color;
-    }
+  a {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    transition: color ease 400ms;
+    border-bottom: 1px solid $brand-color;
+  }
+
   a {
     animation-delay: 2s;
     transition: color ease 400ms;
     border-bottom: 1px solid $brand-color;
   }
 }
-/**
- * Blockquotes
- */
+
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
@@ -59,13 +55,11 @@ blockquote {
   letter-spacing: -1px;
   font-style: italic;
 
-  >:last-child {
+  > :last-child {
     margin-bottom: 0;
   }
 }
-/**
- * Code formatting
- */
+
 pre,
 code {
   font-size: 15px;
@@ -96,4 +90,9 @@ pre {
 
 .small {
   font-size: .8em
+}
+
+.up {
+  vertical-align: super;
+  font-size: .6em;
 }
