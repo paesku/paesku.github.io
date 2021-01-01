@@ -16,6 +16,7 @@
     canvas.addEventListener('mousemove', onMove, false);
     canvas.addEventListener('touchmove', onMove, false);
     canvas.addEventListener('mouseup', onStop, false);
+    canvas.addEventListener('touchend', onStop, false);
   }
 
   function overlay() {
@@ -32,8 +33,12 @@
   function onMove(event) {
     event.preventDefault();
     clearTimeout(timeout);
-    if (isClicked(event) || isTouched(event)) {
-      eraser(event);
+    if (isClicked(event)) {
+      const {clientX, clientY} = event;
+      eraser(coordinates(clientX, clientY));
+    } else if (isTouched(event)) {
+      const {clientX, clientY} = event.touches[0];
+      eraser(coordinates(clientX, clientY));
     }
   }
 
@@ -50,7 +55,7 @@
   }
 
   function isTouched(event) {
-    return (event && event.targetTouches && event.targetTouches.length && event.targetTouches[0]);
+    return !!(event && event.targetTouches && event.targetTouches.length && event.targetTouches[0]);
   }
 
   function coordinates(x, y) {
@@ -62,8 +67,7 @@
     };
   }
 
-  function eraser(event) {
-    const {x, y} = coordinates(event.clientX, event.clientY);
+  function eraser({x, y}) {
     context.beginPath();
     context.filter = `blur(${blur})`;
     context.arc(x, y, eraserRadius, 0, 2 * Math.PI);
