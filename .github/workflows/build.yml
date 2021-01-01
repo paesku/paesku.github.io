@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - new-year
 
 jobs:
   build:
