@@ -1,53 +1,86 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>contextstudio | Portfolio</title><link rel="stylesheet" href="../main.css"></head><body><div class="wrapper"><script src="https://gist.github.com/paesku/cef4ea174582b6aa667e.js"></script></div><script type="text/javascript">(function () {
-  'use strict';
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>contextstudio | Portfolio</title><link rel="stylesheet" href="../main.css"></head><body><div class="wrapper"><h1>Git cheat sheet</h1><p>There is a wonderful german book about Git: <a href="https://gitbu.ch/git.pdf">gitbu.ch</a>.<br>And a quickstart Site <a href="https://rogerdudler.github.io/git-guide/">rogerdudler.github.io</a> or <a href="https://ohshitgit.com">ohshitgit.com</a> if it's to late.</p><h2>Content</h2><ol start="0"><li><a href="#remotes">Remotes</a></li><li><a href="#branches">Branches</a></li><li><a href="#working-area">Working Area</a></li><li><a href="#index">Index</a></li><li><a href="#commit">Committing</a></li><li><a href="#tag">Tagging</a></li><li><a href="#files">Files</a></li><li><a href="#stash">Stash</a></li><li><a href="#merge">Merging</a></li><li><a href="#info">Information</a></li><li><a href="#track">Tracking</a></li><li><a href="#config">Gitconfig</a></li></ol><p>These commands assume following branching concept:</p><p><img src="https://cloud.githubusercontent.com/assets/3726371/13198769/27792f90-d812-11e5-8e15-15b01b0cc4cd.png" alt="feature-branches"></p><h2 id="remotes">Remotes</h2><p>List remotes</p><pre><code class="language-shell">git remote -v
+</code></pre><p>Add a remote</p><pre><code class="language-shell">git remote add another-origin &lt;git-repo-url&gt;
+</code></pre><p>Remove a remote</p><pre><code class="language-shell">git remote rm &lt;remote-name&gt;
+</code></pre><h2 id="branches">Branches</h2><p>List all branches</p><pre><code class="language-shell">git branch -a
+</code></pre><p>List remote branches</p><pre><code class="language-shell">git branch -r
+</code></pre><h3>Basics</h3><h4>Create Clean Branch</h4><p>• create and checkout branch<br>• origin/<main-branch>is starting point<br>• and --no-track avoids tracking that starting point as upstream (which it is not)</main-branch></p><p>with the last two dashes you will receive a clear error output in case you made a mistake, it ensures that everthing before are no paths</p><pre><code>git checkout -b &lt;feature-branche&gt; --no-track origin/&lt;main-branch&gt; --
+</code></pre><h4>Delete Branch</h4><p>To delete a local branch</p><pre><code>git branch -d &lt;the-local_branch&gt;
+</code></pre><p>Delete all merged local branches. Be aware!</p><pre><code>git branch --merged | grep -v \* | xargs git branch -D 
+</code></pre><p>To delete a remote branch (push is the only command which gives you remote access)</p><pre><code>git push origin :&lt;the-remote-branch&gt;
+</code></pre><h4>Rename Branch</h4><p>Rename Branch locally</p><pre><code>git branch -m &lt;old-name&gt; &lt;new-name&gt;
+</code></pre><p>Push new Branch to remote</p><pre><code>git push origin &lt;new-name&gt;:master
+</code></pre><h4>Clean Branch without history (Orphan Branch)</h4><pre><code>git checkout -o &lt;branch-name&gt;    
+</code></pre><h2 id="working-area">Working Area</h2><p>clear staging area</p><pre><code>git reset
+</code></pre><p>Remove from staging</p><pre><code>git reset HEAD -- .
+</code></pre><p>show local commit not pushed yet</p><pre><code>git log @{u}..
+</code></pre><p>clean working directory</p><pre><code>git reset --hard
 
-  const sectionNodes = document.querySelectorAll('.section');
-  const sections = Array.prototype.slice.call(sectionNodes);
-  const navigations = document.querySelectorAll('.navigation-item');
+git clean -f -d
+</code></pre><p>remove file from commit</p><pre><code>git reset --soft HEAD~1
+
+git reset HEAD &lt;path-to-file&gt;
+</code></pre><p>Remove file before commit</p><pre><code>git checkout &lt;path-to-file&gt;
+</code></pre><h2 id="index">Index</h2><p>Add file to Index</p><pre><code>git add &lt;path-to-file&gt; or &lt;path-to-folder&gt;
+</code></pre><p>Add all files to Index</p><pre><code>git add .
+</code></pre><p>Add changed files to Index</p><pre><code>git add -u
+</code></pre><p>Remove file from Index</p><pre><code>git rm --cached &lt;path-to-file&gt;
+</code></pre><h2 id="commit">Committing</h2><p>Commit files with a one-liner</p><pre><code>git commit -m &quot;&lt;commit message&gt;&quot;
+</code></pre><p>Commit files with preset Editor</p><pre><code>git commit
+</code></pre><p>Empty Commit</p><pre><code>git commit --allow-empty -m &quot;&lt;commit message&gt;&quot;
+</code></pre><p>Undo last commit and keep changes</p><pre><code>git reset HEAD^
+</code></pre><h2 id="tag">Tagging</h2><p>Add a tag</p><pre><code>git tag --annotate -m &quot;&lt;commit message&gt;&quot; &lt;tag-name&gt;
+</code></pre><p>Push added tag</p><pre><code>git push origin &lt;tag-name&gt;
+</code></pre><h2 id="files">Files</h2><p>Find latest commit where file existed</p><pre><code>git rev-list -n 1 HEAD --  &lt;path-to-file&gt;
+</code></pre><p>Re add deleted file</p><pre><code>git checkout &lt;deleting_commit&gt;^ -- &lt;path-to-file&gt;
+</code></pre><h2 id="stash">Stash</h2><p>Save custom named stash</p><pre><code>git stash save &quot;stashname&quot; 
+</code></pre><p>Show all stashes</p><pre><code>git stash list
+</code></pre><p>Show Stash content</p><pre><code>git stash show -p stash@{n}
+</code></pre><p>To apply a stash and remove it from the stash list, run:</p><pre><code>git stash pop stash@{n}
+</code></pre><p>To apply a stash and keep it in the stash cache, run:</p><pre><code>git stash apply stash@{n}
+</code></pre><p>To remove a stash</p><pre><code>git stash drop stash@{n}
+</code></pre><h2 id="merge">Merge</h2><h3>Basics</h3><h4>Update Branches</h4><pre><code>git fetch
+
+git merge --no-ff &lt;main-branch&gt;
+</code></pre><h4>Sync Branches</h4><p>pull changes from remote, rebase local commits to the remote-head, do not try to fix conflicts</p><pre><code>git pull --ff-only --rebase
+</code></pre><h3>Handle conflicts the hard way</h3><p>Keep mine</p><pre><code>git checkout --ours path/to/file
+</code></pre><p>Keep other</p><pre><code>git checkout --theirs path/to/file
+</code></pre><h3>Reverse Merge</h3><p>update local snapshot of remote repository update your local branch to include commits from other developers on that branch</p><pre><code>git fetch --prune
+git checkout &lt;feature-branch&gt;
+git merge --ff-only
+</code></pre><p>if that branch is already checked out</p><pre><code>git pull --ff-only --prune
+</code></pre><p>keep the automatic commit message</p><pre><code>git merge origin/&lt;main-branch&gt;
+</code></pre><p>in case of conflicts</p><pre><code>git status 
+edit &lt;file&gt;
+git add/rm &lt;file&gt;
+git commit
+</code></pre><p>publish the commit merge</p><pre><code>git push
+</code></pre><p>Check which branches are merged into another</p><pre><code>git branch --merged &lt;branch-to-check-against&gt;
+</code></pre><h3>Cherry Picking</h3><pre><code>git cherry-pick &lt;commit-hash&gt;
+</code></pre><p>Edit commit message</p><pre><code>git cherry-pick -e &lt;commit-hash&gt;
+</code></pre><h2 id="info">Information</h2><p>Get information about changed files between to commits.</p><pre><code>git diff [SHA1]..[SHA2] --name-only
+</code></pre><h2 id="track">Tracking</h2><p>Show all commits</p><pre><code>git reflog
+</code></pre><p>Show Branches which contain a specific commit. Usefull to search for merges.</p><pre><code>git branch -a --contains &lt;hash oder branch-name&gt;
+</code></pre><p>Show Informations about a particular file</p><pre><code>git log --follow filename
+</code></pre><p>Find commit where file was added</p><pre><code>git log --diff-filter=A -- filename
+</code></pre><p>or to get the commit message</p><pre><code>git log --oneline filename | tail -1
+</code></pre><p>find all TODO's</p><pre><code>git grep -E &quot;# TODO|// TODO&quot;
+</code></pre><h2 id="config">Gitconfig</h2><p><a href="https://gist.github.com/paesku/4668d8d6f1bda9e73f1a">Example config</a></p></div><script type="text/javascript">(function () {
+  'use strict';
 
   onInit();
 
   function onInit() {
-    navigations.forEach(navigation => navigation.addEventListener('click', navigateTo));
-    window.onscroll = () => onScroll();
+    document
+      .querySelectorAll('[id]')
+      .forEach(node => node.insertAdjacentHTML('beforeend', ' <a class="up" data-up>⬆</a>'));
 
-    const activeNav = document.querySelectorAll('[data-target]')[0];
-    markActiveNavigation(activeNav);
+    document
+      .querySelectorAll('[data-up]')
+      .forEach(node => node.addEventListener('click', scrollToTop));
   }
 
-  function onScroll() {
-    sections.forEach(section => {
-      if (isScrolledIntoView(section)) {
-        const activeNav = document.querySelector(`[data-target="${section.id}"]`);
-        markActiveNavigation(activeNav);
-      }
-    });
-
-    function isScrolledIntoView(element) {
-      return elementBoundsTop(element) <= 0;
-    }
-  }
-
-  function navigateTo(event) {
+  function scrollToTop(event) {
     event.preventDefault();
-    const targetElement = document.getElementById(this.dataset.target);
-    const top = elementBoundsTop(targetElement);
-    smoothScrollTo({top});
-    markActiveNavigation(this)
-  }
-
-  function elementBoundsTop(element) {
-    const {top} = element.getBoundingClientRect();
-    return top;
-  }
-
-  function smoothScrollTo(config) {
-    const defaultConfig = {top: 0, left: 0, behavior: 'smooth'};
-    window.scrollBy(Object.assign({}, defaultConfig, config));
-  }
-
-  function markActiveNavigation(element) {
-    navigations.forEach(navigation => navigation.classList.remove('active'));
-    element.classList.add('active');
+    window.scrollTo({top: 0, left: 0, behavior: 'auto'});
   }
 })();</script></body></html>
