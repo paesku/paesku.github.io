@@ -5,7 +5,7 @@ module.exports = () => {
     image: 'paesku.jpg',
     theme: 'ffffff',
     description: 'Geboren bei Muri in der Schweiz, schloss ich nach meiner Ausbildung zum Maschinenzeichner das Industrie Design Studium an der Fachhochschule Nordwestschweiz (FHNW) ab. Anschliessend arbeitete ich als System-Designer im Bereich Netzwerkkommunikation bei Reichle & deMassari, sowie als wissenschaftlicher Mitarbeiter an der FHNW. Seit 2009 lebe und arbeite ich in Leipzig und bin seit nunmehr 5 Jahren als UX Designer in verschiedenen Softwarebereichen tätig. Meine Leidenschaft gilt der Konzeption und Entwicklung komplexer Anwendungen.',
-    tags: ['UI/UXDesign', 'Konzeption', 'FrontendDevelopment']
+    tags: ['UX', 'Konzeption', 'FrontendDevelopment']
   },
     {
       title: 'M&A Prozessmanagement',
@@ -14,12 +14,21 @@ module.exports = () => {
       theme: '000',
       description: 'Massgeschneiderte Inhouse Anwendung für M&A Prozessemanagement zum verfolgen von Deals als auch CMS zur Verwaltung von Firmen und Kontakten.',
       tags:
-        ['UserExperience',
+        [
+          'UX/UI',
+          'Anforderungsentwicklung',
+          'Click Prototypen',
+          'Benutzer Interviews',
+          'User Stories',
+          'Aufgaben Analysen',
+          'Benutzer Interviews',
+          'Log Analysen',
           'Angular',
           'Figma',
           'UILibrary',
           'Mobile',
-          'Desktop'],
+          'Desktop',
+        ],
       date: 2019,
       images:
         ['process-mobile.png',
@@ -35,11 +44,14 @@ module.exports = () => {
       theme: 'efefef',
       description: 'Onboarding- und Navigationskonzept für Endkunden eines fiktiven Stromanbieters. Smartmeter in Kombination mit einem Gateway ermöglichen neue Stromsparoptionen',
       tags:
-        ['UserInterface',
-          'UserExperience',
+        [
+          'UX/UI',
+          'Benutzer Interviews',
+          'Click Prototypen',
           'Konzept',
           'Sketch',
-          'Mobile'],
+          'Mobile',
+        ],
       date: 2018,
       images: ['power-detail.jpg']
     },
@@ -50,15 +62,23 @@ module.exports = () => {
       theme: 'b3b3b3',
       description: 'Entwicklung von Web-Applikationen zur Überwachung des Netzwerkverkehrs durch Systemadministratoren. Angefangen von kleinsten Interface-Komponenten beinhaltete die Entwicklung auch Bibliotheken bis hin zum gesamten Layout mit Hilfe von Skizzen, Prototypen und produktionsfertigem Code.',
       tags:
-        ['UserInterface',
-          'UserExperience',
+        [
+          'UX/UI',
           'AngularJs',
+          'Mitbewerber Analysen',
+          'Beobachtungen',
+          'Personas',
+          'User Stories',
+          'Click Prototypen',
+          'Aufgaben Analysen',
+          'Anforderungsentwicklung',
           'Angular',
           'UILibrary',
           'FrontendDevelopment',
           'Sketch',
           'InvisionApp',
-          'Scrum'],
+          'Scrum',
+        ],
       date: '2015 - 2018',
       web: 'www.demo.cognitix.systems',
       images:
@@ -76,11 +96,15 @@ module.exports = () => {
       theme: 'cecece',
       description: 'Der Denkmalradar ist ein Projekt der Leipziger Denkmalstiftung und dient Denkmalinteressierten zum Eintragen bedrohter Denkmale als auch zum Auffinden exemplarischer Sanierungskonzepte.',
       tags:
-        ['AngularJS',
+        [
+          'AngularJS',
           'Bootstrap',
-          'UserInterface',
+          'UX/UI',
+          'Papier Prototypen',
+          'Anforderungsentwicklung',
           'FrontendDevelopment',
-          'Konzept'],
+          'Konzept',
+        ],
       date: '2014 — 2015',
       web: 'www.denkmalradar.de',
       images: ['denkmalradar-form.png']
@@ -92,11 +116,15 @@ module.exports = () => {
       theme: 'ffffff',
       description: 'Der Wirkungsmonitor ist ein Projekt der Kommunalen Gemeinschaftsstelle für Verwaltungsmanagement (KGSt) und eine innovative Lösung zur wirkungsorientierten Steuerung von Programmen und Projekten auf kommunaler Ebene. Entwickelt wurde das Design der webbasierten Lösung in Hinblick auf optimale Usability und technische Realisierbarkeit.',
       tags:
-        ['UserInterface',
-          'UserExperience',
+        [
+          'UX',
+          'Aufgaben Analysen',
+          'Personas',
+          'Anforderungsentwicklung',
           'Informationsarchitektur',
           'FrontendDevelopment',
-          'Konzept'],
+          'Konzept'
+        ],
       date: '2013 — 2014',
       images: ['wirkunsgmonitor-04.jpg', 'wirkunsgmonitor-task.jpg']
     },
@@ -106,7 +134,7 @@ module.exports = () => {
       draft: true,
       image: 'me.jpg',
       description: 'Ziel der Maker Mafia ist die lokale Vernetzung von innovativen Unternehmen und Institutionen. Kleine und mittelständische Unternehmen können im Sinne der „Maker-Bewegung“ Ressourcen, wie Maschinen, Räume und weitere physische Objekte, miteinander teilen.',
-      tags: ['Konzept', 'UserInterface', 'UserExperience'],
+      tags: ['Konzept'],
       web: 'www.makermafia.com',
       date: 2013,
       images: null
