@@ -11,6 +11,7 @@ script: git.js
 
 There is a wonderful german book about Git: [gitbu.ch](https://gitbu.ch/git.pdf).  
 And a quickstart Site [rogerdudler.github.io](https://rogerdudler.github.io/git-guide/) or [ohshitgit.com](https://ohshitgit.com) if it's to late.
+Or [How Git truly works](https://towardsdatascience.com/how-git-truly-works-cd9c375966f6) for a deeper understanding.
 
 ## Content
 0. [Remotes](#remotes)  
