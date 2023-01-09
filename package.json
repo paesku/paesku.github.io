@@ -14,7 +14,7 @@
   "author": "paesku",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^1.0.2",
     "eleventy-plugin-sass": "^1.1.1",
     "html-minifier": "^4.0.0"
   }
